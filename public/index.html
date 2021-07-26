@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Trabalho Final - Programação para Internet</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<div class="pagina jogo" id="jogo" style="display: none;">
+			<div class="container">
+				<h1 class="titulo">JOGO DO ANO</h1>
+				<canvas class="bordinha" id="tela" width="10" height="10"></canvas>
+				<div class="placar bordinha" id="placar"></div>
+			</div>
+		</div>
+		<div class="pagina" id="connect">
+			<form class="connect-form bordinha" id="form">
+				<span class="titulo">PREPARAÇÃO</span>
+				<span class="espaco">Apelido:</span>
+				<input class="box" type="text" id="nickname" required maxlength="12" />
+				<span class="espaco">Cor:</span>
+				<input class="btn box" type="color" id="color" value="easteregg" />
+				<input class="btn box" type="submit" value="Jogar" style="margin-top: 12px;" />
+			</form>
+		</div>
+		<script src="./js/scripts.js" type="module"></script>
+	</body>
+</html>

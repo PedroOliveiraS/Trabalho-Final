@@ -1,0 +1,133 @@
+body {
+	font-family: fantasy;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/aviao.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 97vh;
+	width: 97vw;
+}
+
+.bordinha {
+	outline-style: groove;
+	outline-width: 10px;
+	outline-color: black;
+	background-color: #e7e7e79f;
+}
+
+#tela {
+	border: 10px solid #ccc;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	width: 400px;
+	height: 400px;
+}
+
+.pagina {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.connect-form {
+	display: flex;
+	flex-direction: column;
+	padding: 16px 8px;
+	border: 1px solid #ccc;
+}
+
+.connect-form > *:not(:first-child) {
+	margin-top: 4px;
+	width: 100%;
+}
+
+.jogo {
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.placar {
+	margin-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	width: 400px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.placar > *:not(:first-child) {
+	margin-top: 4px;
+	width: 100%;
+}
+
+.pontuacao {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cor {
+	display: inline-block;
+	min-width: 16px;
+	min-height: 16px;
+	margin: 0 4px;
+}
+
+.titulo {
+	font-size: large;
+	font-weight: bold;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+.espaco {
+	padding-top: 0.5rem;
+}
+
+#nickname {
+	padding: 10px;
+}
+
+.box {
+	width: 1.4rem;
+	height: 1.9rem;
+	color: black;
+	background-color: white;
+	border: none;
+}
+
+.btn {
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px 10px;
+	transition: 600ms;
+}
+
+.btn:hover {
+	background-color: #0000001f;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+	#tela {
+		width: 300px;
+		height: 300px;
+	}
+	.placar {
+		width: 300px;
+	}
+}
