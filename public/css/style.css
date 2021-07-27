@@ -1,24 +1,25 @@
 body {
-	font-family: fantasy;
-	display: flex;
-	flex-direction: column;
-	background-image: url("../images/aviao.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	height: 97vh;
+	height: 90vh;
 	width: 97vw;
+	padding: 0;
+    margin: 0;
 }
 
-.bordinha {
+.borda {
 	outline-style: groove;
-	outline-width: 10px;
+	outline-width: 1px;
 	outline-color: black;
 	background-color: #e7e7e79f;
 }
 
+#color{
+	width: 80px;
+}
+
 #tela {
-	border: 10px solid #ccc;
+	border: 1px solid black;
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
 	image-rendering: -moz-crisp-edges;
@@ -28,17 +29,13 @@ body {
 
 .pagina {
 	margin-top: 3rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 300px;
+	background-color: white;
 }
 
 .connect-form {
-	display: flex;
 	flex-direction: column;
 	padding: 16px 8px;
-	border: 1px solid #ccc;
 }
 
 .connect-form > *:not(:first-child) {
@@ -46,25 +43,17 @@ body {
 	width: 100%;
 }
 
-.jogo {
+#jogo {
 	padding: 32px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
 .placar {
+	padding-left: 
 	margin-top: 32px;
-	display: flex;
 	flex-direction: column;
 	align-self: stretch;
-	width: 400px;
+	width: 250px;
 	overflow: hidden;
 	padding: 10px;
 }
@@ -75,7 +64,6 @@ body {
 }
 
 .pontuacao {
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
@@ -98,6 +86,9 @@ body {
 	padding-top: 0.5rem;
 }
 
+#btnT{
+	width: 150px;
+}
 #nickname {
 	padding: 10px;
 }
@@ -106,7 +97,7 @@ body {
 	width: 1.4rem;
 	height: 1.9rem;
 	color: black;
-	background-color: white;
+	background-color: lightgray;
 	border: none;
 }
 
@@ -115,6 +106,7 @@ body {
 	font-size: 15px;
 	padding: 5px 10px;
 	transition: 600ms;
+	width: 150px
 }
 
 .btn:hover {
@@ -122,12 +114,13 @@ body {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 450px) {
-	#tela {
-		width: 300px;
-		height: 300px;
-	}
-	.placar {
-		width: 300px;
-	}
+
+#rightD{
+	margin-left: 500px;
+	margin-top: -400px;
+}
+
+#leftD{
+	width: 400px;
+	background-color: blue;
 }
