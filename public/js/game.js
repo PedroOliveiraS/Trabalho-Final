@@ -3,8 +3,8 @@ export default () => {
 		players: {},
 		fruits: {},
 		screen: {
-			width: 10,
-			height: 10,
+			width: 30,
+			height: 30,
 		},
 	};
 
